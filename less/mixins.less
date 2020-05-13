@@ -1,1 +1,30 @@
-// Mixins in here
+.contentspacing() {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contentspacingTwo() {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btnStyles(@bgColor:teal, @width:180px, @font-color:white) {
+  border: 1px solid silver;
+  display: flex;
+  background-color: @bgColor;
+  margin: 0 10px 20px;
+  width: @width;
+  height: 45px;
+  border-radius: 10px;
+  color: @font-color;
+  font-size: 1.6rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.mobileFontsOne() {
+  @media@mobile{
+    font-size: calc(290%);
+    font-weight: bold;
+  }
+}

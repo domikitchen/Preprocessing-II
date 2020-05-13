@@ -16,16 +16,22 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  .mobileFontsOne();
 }
 
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  .mobileFontsOne();
 }
 
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  @media@mobile {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
 }
 
 p {
@@ -40,7 +46,15 @@ img {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  .contentspacing();
+  @media@mobile {
+    .contentspacingTwo()
+  }
+}
+
+header {
+  .contentspacing();
+  @media@mobile {
+    .contentspacingTwo()
+  }
 }
